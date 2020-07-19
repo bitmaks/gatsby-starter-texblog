@@ -1,0 +1,107 @@
+$almost-black: #1e1e1e;
+
+$social-colors: (
+  "linkedin": #0077b5,
+  "instagram": #c13584,
+  "github": rgb(149, 72, 201),
+  "twitter": #1da1f2,
+  "mail": #d44638,
+);
+
+$tag-colors: (
+  "github": (
+    #0077b5,
+  ),
+  "instagram": #c13584,
+  "twitter": #1da1f2,
+  "mail": #d44638,
+);
+
+// Colours:
+$sweet-pink: #fc466b;
+$blue-text: #007aff;
+$blue-selection: rgba(0, 120, 255, 0.85);
+
+$blue-gradient: linear-gradient(
+  180deg,
+  rgba(0, 162, 255, 1) 0%,
+  rgba(0, 122, 255, 1) 100%
+);
+
+$light-blue: #00a2ff;
+$med-blue: #0076ba;
+$blue-placeholder: rgba(0, 206, 255, 0.4);
+
+$blue-900: #111d33;
+$blue-800: #2a4a7f;
+$blue-700: #3a67b2;
+$blue-600: #4b84e5;
+$blue-500: #5393fe;
+$blue-400: #73abff;
+$blue-300: #cbdfff;
+$blue-200: #e3efff;
+$blue-100: #f1f8ff;
+
+$green-600: #61a840;
+$green-500: #6cbb47;
+$green-200: #e2f1da;
+$green-100: #f0f8ed;
+
+$grey-1000: #050505;
+$grey-900: #111010;
+$grey-800: #3d3f42;
+$grey-700: #7d7f81;
+$grey-600: #a9aaab;
+$grey-500: #bebfc0;
+$grey-400: #d4d4d5;
+$grey-300: #e9eaea;
+$grey-200: #f2f2f2;
+$grey-100: #f9f9fa;
+
+$heart-red: #e21947;
+$orange-600: #dc6039;
+$orange-500: #f46b3f;
+$orange-200: #fde1d9;
+$orange-100: #fef0ec;
+
+$pink-500: #e180f9;
+$pink-400: #cf9cff;
+$pink-300: #e9d8f9;
+$pink-200: #f7d8ff;
+$pink-100: #f7f1fd;
+
+$mauve-200: #fff7f7;
+
+$purple-900: #36254c;
+$purple-800: #5b3e80;
+$purple-700: #7f56b3;
+$purple-600: #a36fe6;
+$purple-500: #b57bff;
+$purple-400: #c495ff;
+$purple-300: #d3b0ff;
+$purple-200: #f0e5ff;
+$purple-100: #f8f2ff;
+
+$teal-600: #159f9f;
+$teal-500: #17b1b1;
+$teal-200: #d1efef;
+$teal-100: #e8f7f7;
+
+$teal-light: #82e7cf;
+$teal-selection: rgba(111, 231, 207, 0.9);
+$teal-med: #23bfb6;
+
+// Shadows:
+$box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
+  0 1px 2px rgba(102, 119, 136, 0.2);
+$box-shadow--hover: 0 2px 6px 0px rgba(65, 145, 255, 0.25);
+$box-shadow: 0 7px 48px rgba(102, 119, 136, 0.22);
+$box-shadow--blue: 0 7px 48px rgba(0, 47, 125, 0.12);
+$box-shadow--nav: 0 4px 10px rgba(146, 156, 166, 0.15);
+$box-shadow__image--blue: 0 7px 48px rgba($blue-800, 0.17);
+$box-shadow__image--grey: 0 17px 56px rgba($grey-700, 0.17);
+$box-shadow__button--grey: 0 2px 6px 0px rgba(65, 145, 255, 0.25);
+$box-shadow__button--blue: 0 2px 8px rgba(0, 47, 125, 0.2);
+
+// Site Settings:
+$selection: $blue-selection;

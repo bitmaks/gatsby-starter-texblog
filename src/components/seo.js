@@ -10,6 +10,14 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+function formatTitle(title, siteTitle) {
+  if (title.title === "leaveEmpty") {
+    return `${siteTitle}`
+  } else {
+    return `${title.title} | ${siteTitle}`
+  }
+}
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -33,7 +41,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={formatTitle({ title }, site.siteMetadata.title)}
       meta={[
         {
           name: `description`,

@@ -1,0 +1,73 @@
+@keyframes fadeUpSmallOpacity {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0.5rem, 0);
+  }
+  100% {
+    opacity: 0.65;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeUpSmall {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0.5rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeUpMedium {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 1rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rainbowAnimate {
+  0%,
+  100% {
+    background-position: 0;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+}
+
+@keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pullOut {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-20deg);
+  }
+}

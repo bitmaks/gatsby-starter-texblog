@@ -1,0 +1,117 @@
+@import "./imports";
+
+html,
+body,
+#root {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  height: 100%;
+  background-color: floralwhite;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: $sans-serif-stack;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $almost-black;
+  -webkit-font-smoothing: antialiased;
+
+  * {
+    box-sizing: border-box;
+
+    &::selection {
+      background: $selection;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1400px) {
+    font-size: 14px;
+  }
+}
+
+h1 {
+  font-family: $sans-serif-stack;
+  font-weight: 800;
+  font-size: 4em;
+  letter-spacing: -0.005em;
+  color: $almost-black;
+}
+
+h2 {
+  font-family: $sans-serif-stack;
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: $almost-black;
+}
+
+h3 {
+  margin: 0;
+  font-family: $sans-serif-stack;
+  font-size: 2em;
+  font-weight: normal;
+  color: $grey-800;
+}
+
+h4 {
+  margin: 0;
+  font-family: $sans-serif-stack;
+  font-size: 100%;
+  font-weight: 500;
+  color: $grey-600;
+}
+
+body {
+  margin: 0;
+  font-family: $serif-stack;
+  font-size: 100%;
+  font-weight: 500;
+  color: $grey-600;
+}
+
+button {
+  border-radius: 7px;
+  border-width: thin;
+  background-color: white;
+  border-style: solid;
+  border-color: $teal-med;
+  font-family: $sans-serif-stack;
+  font-size: 115%;
+  color: $teal-600;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    border-style: solid;
+  }
+}
+
+input {
+  font-family: $sans-serif-stack;
+  -webkit-appearance: none;
+  font-size: 0.9em;
+  font-weight: normal;
+  outline: none;
+}
+
+textarea {
+  outline: none;
+  -webkit-appearance: none;
+  min-height: 50px;
+  font-family: $sans-serif-stack;
+  resize: none;
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding: 12px 11px;
+}
