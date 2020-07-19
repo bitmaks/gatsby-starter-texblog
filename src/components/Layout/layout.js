@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { slide as Menu } from "react-burger-menu"
 
 import Header from "../Header/header"
 import "./layout.scss"
