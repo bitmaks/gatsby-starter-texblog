@@ -3,8 +3,8 @@
   position: absolute;
   width: 22px;
   height: 21px;
-  right: 36px;
-  top: 36px;
+  right: 10%;
+  top: 5px;
 }
 
 /* Color/shape of burger icon bars */
@@ -63,9 +63,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Styling of overlay */
 .bm-overlay {
-  position: absolute !important;
-  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
   margin-top: 0;
   top: 0;
-  height: 100vh !important;
+  height: 100%;
 }

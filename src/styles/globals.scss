@@ -39,9 +39,9 @@ body {
 }
 
 h1 {
-  font-family: $sans-serif-stack;
+  font-family: $serif-stack;
   font-weight: 800;
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: -0.005em;
   color: $almost-black;
 }
@@ -56,7 +56,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-family: $sans-serif-stack;
+  font-family: $serif-stack;
   font-size: 2em;
   font-weight: normal;
   color: $grey-800;
@@ -64,10 +64,10 @@ h3 {
 
 h4 {
   margin: 0;
-  font-family: $sans-serif-stack;
+  font-family: $serif-stack;
   font-size: 100%;
   font-weight: 500;
-  color: $grey-600;
+  color: $almost-black;
 }
 
 body {
@@ -76,6 +76,14 @@ body {
   font-size: 100%;
   font-weight: 500;
   color: $grey-600;
+}
+
+span {
+  margin: 0;
+  font-family: $sans-serif-stack;
+  font-size: 100%;
+  font-weight: normal;
+  color: $almost-black;
 }
 
 button {

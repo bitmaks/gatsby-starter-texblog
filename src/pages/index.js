@@ -1,22 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Intro from "../components/Intro/intro"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="leaveEmpty" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+export default function IndexPage(props) {
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
+        }
+      }
+    `
+  )
 
-export default IndexPage
+  console.log(site.siteMetadata.description)
+
+  return (
+    <Layout>
+      {/* siteTitle specifies that the title will the siteTitle alone */}
+      <SEO title="siteTitle" />
+      <Intro
+        siteTitle={site.siteMetadata.title}
+        siteDescription={site.siteMetadata.description}
+        siteAuthor={site.siteMetadata.author}
+      />
+      <Link to="/page-2/">Go to page 2</Link>
+      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    </Layout>
+  )
+}

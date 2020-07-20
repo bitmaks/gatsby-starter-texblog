@@ -1,0 +1,18 @@
+.Intro {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+        font-weight: bold;
+    }
+    &__subheader {
+        font-size: 100%;
+        text-align: center;
+        line-height: 2em;
+        letter-spacing: 0.05rem;
+        padding: 0 25%;
+    }
+}
