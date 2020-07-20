@@ -1,5 +1,33 @@
-$serif-stack: "DM Serif Display", Times, serif;
-$article-stack: "Amiri", Times, serif;
-$sans-serif-stack: "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI",
+@font-face {
+  font-family: "CMU Serif";
+  src: url("/fonts/cmunrm.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("/fonts/cmunbx.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("/fonts/cmunti.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Computer Modern Serif";
+  src: url("/fonts/cmunbi.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+$serif-stack: "CMU Serif", Georgia, Times, serif;
+$article-stack: $serif-stack;
+$sans-serif-stack: -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
