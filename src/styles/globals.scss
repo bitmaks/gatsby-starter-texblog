@@ -22,11 +22,6 @@ body {
 
   * {
     box-sizing: border-box;
-
-    &::selection {
-      background: $selection;
-      color: white;
-    }
   }
 
   @media (max-width: 768px) {
@@ -47,10 +42,10 @@ h1 {
 }
 
 h2 {
-  font-family: $sans-serif-stack;
+  font-family: $serif-stack;
   margin: 0;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 800;
   color: $almost-black;
 }
 

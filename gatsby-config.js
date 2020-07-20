@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
+    // Update these and enjoy :)
     title: `TeXBlog`,
-    description: `A simple, LaTeX based starter to properly showcase your beautifully typeset literature. Complements science blogs remarkably well.`,
+    description: `A simple, LaTeX focused starter to properly showcase your beautifully typeset literature. Complements science blogs remarkably well.`,
     author: `Akshat Bisht`,
   },
   plugins: [

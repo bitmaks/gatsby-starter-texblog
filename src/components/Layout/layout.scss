@@ -6,6 +6,11 @@
     justify-content: flex-start;
     align-items: center;
     &__children {
+        flex: 1;
         padding: 1vh 30vw;
+    }
+    &__footer {
+        flex-shrink: 0;
+        bottom: 0;
     }
 }

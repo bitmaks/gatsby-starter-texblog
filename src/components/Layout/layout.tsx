@@ -22,9 +22,16 @@ export default function Layout({ children }) {
   return (
     <>
       <div className="Layout">
-        <Header className="Layout__header" siteTitle={data.site.siteMetadata.title} />
+        <Header
+          className="Layout__header"
+          siteTitle={data.site.siteMetadata.title}
+        />
         <main className="Layout__children">{children}</main>
-        <Footer className="Layout__footer" siteTitle={data.site.siteMetadata.title} />
+        <Footer
+          className="Layout__footer"
+          siteTitle={data.site.siteMetadata.title}
+          siteAuthor={data.site.siteMetadata.author}
+        />
       </div>
     </>
   )
