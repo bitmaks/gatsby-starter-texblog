@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function formatTitle(title, siteTitle) {
-  if (title.title === "leaveEmpty") {
+  if (title.title === "siteTitle") {
     return `${siteTitle}`
   } else {
     return `${title.title} | ${siteTitle}`
