@@ -1,0 +1,45 @@
+@import "../../styles/globals.scss";
+
+.Footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  bottom: 0;
+  margin-bottom: 5vh;
+
+  &__title {
+    margin-bottom: 16px;
+    line-height: 1em;
+  }
+
+  &__legal {
+    font-size: 90%;
+    color: $grey-800;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  &__citation {
+    font-family: $sans-serif-stack;
+    font-size: 80%;
+    color: $grey-700;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 150ms ease-in-out;
+    opacity: 1;
+    &:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+    &::after {
+      content: "↗";
+      font-size: 95%;
+      margin-left: 2px;
+      display: inline-block;
+      vertical-align: center;
+      line-height: normal;
+    }
+  }
+}
