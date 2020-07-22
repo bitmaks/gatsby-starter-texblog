@@ -1,19 +1,30 @@
 .Intro {
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &__header {
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    &__subheader {
-        font-size: 102%;
-        text-align: center;
-        line-height: 2em;
-        letter-spacing: 0.04rem;
-        padding: 0 25%;
-    }
+  width: 100%;
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0vh 30vw;
+  &__header {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  &__subheader {
+    font-size: 102%;
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 0.04rem;
+    padding: 0 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Intro {
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .Intro {
+  }
 }

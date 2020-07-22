@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     // Update these and enjoy :)
     title: `TeXBlog`,
-    description: `A simple, LaTeX focused starter to properly showcase your beautifully typeset literature. Complements science blogs remarkably well.`,
+    description: `A simple, LaTeX enabled starter to properly showcase your beautifully typeset articles. Perfectly complements maths blogs.`,
     author: `Akshat Bisht`,
   },
   plugins: [
@@ -22,16 +22,11 @@ module.exports = {
         name: `gatsby-starter-texblog`,
         short_name: `texblog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        // Color settings can be found in /styles/colors.scss
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

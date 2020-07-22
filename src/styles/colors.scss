@@ -1,5 +1,7 @@
 // Credits to https://marguerite.io/
 
+// Site colour settings below
+
 $blue-900: #111d33;
 $blue-800: #2a4a7f;
 $blue-700: #3a67b2;
@@ -25,8 +27,6 @@ $grey-400: #d4d4d5;
 $grey-300: #e9eaea;
 $grey-200: #f2f2f2;
 $grey-100: #f9f9fa;
-
-$almost-black: $grey-900;
 
 $heart-red: #e21947;
 $orange-600: #dc6039;
@@ -60,6 +60,12 @@ $teal-100: #e8f7f7;
 $teal-light: #82e7cf;
 $teal-selection: rgba(111, 231, 207, 0.9);
 $teal-med: #23bfb6;
+
+// Site Settings:
+$background: floralwhite;
+$text-black: $grey-900;
+
+
 
 // Shadows:
 $box-shadow: 0 6px 8px rgba(102, 119, 136, 0.03),
