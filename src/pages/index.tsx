@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
+
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Intro from "../components/Intro/intro"
+import Posts from "../components/PostDisplay/postdisplay"
 
 export default function IndexPage(props) {
   const { site } = useStaticQuery(
@@ -20,8 +22,6 @@ export default function IndexPage(props) {
     `
   )
 
-  console.log(site.siteMetadata.description)
-
   return (
     <Layout>
       {/* siteTitle specifies that the title will the siteTitle alone */}
@@ -31,6 +31,7 @@ export default function IndexPage(props) {
         siteDescription={site.siteMetadata.description}
         siteAuthor={site.siteMetadata.author}
       />
+      <Posts />
     </Layout>
   )
 }
