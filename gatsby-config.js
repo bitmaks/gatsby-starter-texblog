@@ -18,13 +18,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-prismic-graphql",
-      options: {
-        repositoryName: "texblog", // required
-        defaultLang: "en-uk", // optional, but recommendedpass extra fields
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // * need to update before push

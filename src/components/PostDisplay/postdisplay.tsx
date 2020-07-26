@@ -4,23 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./postdisplay.scss"
 
 export default function Posts() {
-  const { posts } = useStaticQuery(
-    graphql`
-      query Posts {
-        prismic {
-          allPosts {
-            edges {
-              node {
-                body
-                date
-                title
-              }
-            }
-          }
-        }
-      }
-    `
-  )
 
   console.log({ posts })
   if (!posts)

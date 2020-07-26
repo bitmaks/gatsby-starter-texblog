@@ -4,14 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-const { registerLinkResolver } = require("gatsby-source-prismic-graphql")
-const linkResolver = doc => {
-  if (doc.type === "blog_post") return "/post/" + doc.uid
-  return "/other/" + doc.id
-}
-
-registerLinkResolver(linkResolver)
-
 const loadExternalStyles = url => {
   const styles = document.createElement("link")
   styles.rel = "stylesheet"
