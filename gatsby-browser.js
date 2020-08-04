@@ -4,6 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
+import "katex/dist/katex.min.css"
+
 const loadExternalStyles = url => {
   const styles = document.createElement("link")
   styles.rel = "stylesheet"

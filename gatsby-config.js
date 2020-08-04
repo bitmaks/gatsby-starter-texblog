@@ -13,14 +13,15 @@ module.exports = {
         short_name: `texblog`,
         start_url: `/`,
         // Color settings can be found in /styles/colors.scss
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        background_color: `oldlace`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // * need to update before push
+        // * need to update before public release
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
         head: true,
       },
@@ -30,6 +31,23 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [`gatsby-remark-katex`],
+        remarkPlugins: [require(`remark-math`)],
+        defaultLayouts: {
+          posts: require.resolve("./src/components/PostPage/postpage.tsx"),
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
