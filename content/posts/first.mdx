@@ -1,0 +1,85 @@
+---
+title:  LaTeX, Maths, and Code 
+date: "2020-03-23"
+description: "How to use latex and code in your blog posts."
+---
+
+This blog supports some simple code syntax highlighting and the usage of $ \LaTeX $.
+
+Be weary, Katex, the library used to display Latex, will crash your development environment if it encounters a symbol it is unfamiliar with. Be sure to test your posts on the development environment before publishing the site to a production server.
+
+# $\LaTeX$ Examples
+
+Consider the following list of k a's and l b's:
+$$
+\{\underbrace{%
+    \overbrace{a,\ldots, a}^{k\ a's},
+    \overbrace{b,\ldots, b}^{l\ b's}}
+  _{k+l\ \mathrm{elements}}        \}
+$$
+
+<div className="mt4"/>
+
+Look further at this wild equation:
+$$
+\frac{\pm
+  \left|\begin{array}{ccc}
+  x_1-x_2   & y_1-y_2  \\
+  l_1       & m_1
+  \end{array}\right|}
+  {\sqrt{\left|\begin{array}{cc}l_1&m_1\\
+  l_2&m_2\end{array}\right|^2
+  +       \left|\begin{array}{cc}m_1&n_1\\
+  n_1&l_1\end{array}\right|^2}}
+$$
+
+
+<div className="mt5"/>
+
+# Code Examples
+
+### Program in c++ to get the quotient and remainder of a pair of numbers.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int divisor, dividend, quotient, remainder;
+
+  cout << "Enter dividend: ";
+  cin >> dividend;
+
+  cout << "Enter divisor: ";
+  cin >> divisor;
+
+  quotient = dividend / divisor;
+  remainder = dividend % divisor;
+
+  cout << "Quotient = " << quotient << endl;
+  cout << "Remainder = " << remainder;
+
+  return 0;
+}
+```
+
+<div className="mt4"/>
+
+### Program in python using the Sieve of Eratosthenes to count primes
+
+```python
+def countPrimes_sieve_of_eratosthenes(self, n: int) -> int:
+  if n < 2:
+      return 0
+
+  marked = set()
+  seive = [i for i in range(1, n)]
+  skip = 2
+  while skip * skip < n:
+      if skip not in marked:
+          marked.update(seive[2 * skip - 1 :: skip])
+      skip += 1
+
+  return len(seive) - len(marked) - 1
+```
