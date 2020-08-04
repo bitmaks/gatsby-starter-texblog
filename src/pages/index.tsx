@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Intro from "../components/Intro/intro"
-import Posts from "../components/PostDisplay/postdisplay"
+import PostSheet from "../components/PostSheet/postsheet"
 
 export default function IndexPage(props) {
   const { site } = useStaticQuery(
@@ -13,9 +13,21 @@ export default function IndexPage(props) {
       query {
         site {
           siteMetadata {
-            title
-            description
             author
+            description
+            title
+          }
+        }
+        allMdx(sort: { fields: frontmatter___date }) {
+          edges {
+            node {
+              frontmatter {
+                date
+                description
+                title
+              }
+              slug
+            }
           }
         }
       }
@@ -31,7 +43,7 @@ export default function IndexPage(props) {
         siteDescription={site.siteMetadata.description}
         siteAuthor={site.siteMetadata.author}
       />
-      <Posts />
+      <PostSheet data={site.allMdx} />
     </Layout>
   )
 }
