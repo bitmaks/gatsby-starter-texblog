@@ -7,12 +7,27 @@ import "./header.scss"
 const Header = props => (
   <header className={`Header ${props.className}`}>
     <Link to="/" className="Header__logo">
-      <h1 className="Header__logo__text">TeXBlog</h1>
+      <h1 className="Header__logo__text">
+        {!props.siteTitle || props.siteTitle === ""
+          ? `Undefined`
+          : props.siteTitle}
+      </h1>
     </Link>
     <Menu right className="Header__menu">
-      <h1 className="Header__menu__item">
-        <Link to="/page-2">About</Link>
-      </h1>
+      <Link to="/" className="Header__menu__item menuTitle">
+        {!props.siteTitle || props.siteTitle === ""
+          ? `Undefined`
+          : props.siteTitle}
+      </Link>
+      <Link to="/about" className="Header__menu__item">
+        About
+      </Link>
+      <Link to="/posts" className="Header__menu__item">
+        Posts
+      </Link>
+      <Link to="/page-2" className="Header__menu__item">
+        Page 2
+      </Link>
     </Menu>
   </header>
 )
