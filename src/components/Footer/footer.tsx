@@ -1,7 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
-import Image from "../image"
-
 import "./footer.scss"
 
 const Footer = props => (
