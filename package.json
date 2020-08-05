@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-texblog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple, LaTeX enabled starter to properly showcase your beautifully typeset articles. Perfectly complements STEM blogs.",
   "version": "0.1.0",
   "author": "Akshat Bisht <hello@akshatbisht.com>",
   "dependencies": {
@@ -25,6 +25,7 @@
     "gatsby-transformer-sharp": "^2.5.7",
     "katex": "^0.12.0",
     "node-sass": "^4.14.1",
+    "prism-react-renderer": "^1.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-burger-menu": "^2.7.0",
@@ -63,9 +64,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/aaaakshat/gatsby-starter-texblog"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/aaaakshat/gatsby-starter-texblog/issues"
   }
 }
