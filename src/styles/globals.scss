@@ -8,6 +8,7 @@ body,
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
   background-color: $background;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,17 +44,17 @@ h1 {
 h2 {
   font-family: $serif-stack;
   margin: 0;
-  font-size: 2em;
-  font-weight: 800;
+  font-size: 1.75em;
+  font-weight: 900;
   color: $text-black;
 }
 
 h3 {
   margin: 0;
   font-family: $serif-stack;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: normal;
-  color: $grey-800;
+  color: $text-black;
 }
 
 h4 {
@@ -67,7 +68,7 @@ h4 {
 body {
   margin: 0;
   font-family: $serif-stack;
-  font-size: 100%;
+  font-size: 105%;
   font-weight: 500;
   color: $text-black;
 }
@@ -116,4 +117,17 @@ textarea {
   font-size: 0.9rem;
   font-weight: normal;
   padding: 12px 11px;
+}
+
+code, .token {
+  font-family: $monospace-stack;
+  font-size: 100%;
+  margin: 0;
+}
+
+.prism-code {
+  font-family: $monospace-stack;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: rgba(white, 0.9) !important;
 }
