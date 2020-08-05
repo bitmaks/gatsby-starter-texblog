@@ -7,7 +7,7 @@ export default function Intro(props) {
 
   return (
     <section className="Intro">
-      {/* Set these in gatsby-config.js under "siteMetadata" */}
+      {/* Set title and desc in gatsby-config.js under "siteMetadata" */}
       <h1 className="Intro__header">
         {!props.siteTitle || props.siteTitle === ""
           ? `Undefined`
