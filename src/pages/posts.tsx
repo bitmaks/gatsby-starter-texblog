@@ -7,7 +7,7 @@ import SEO from "../components/Utils/seo"
 import Intro from "../components/Intro/intro"
 import Posts from "../components/Posts/posts"
 
-export default function IndexPage(props) {
+export default function PostsPage(props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,12 +26,7 @@ export default function IndexPage(props) {
     <Layout>
       {/* siteTitle specifies that the title will the siteTitle alone */}
       <SEO title="siteTitle" />
-      <Intro
-        siteTitle={site.siteMetadata.title}
-        siteDescription={site.siteMetadata.description}
-        siteAuthor={site.siteMetadata.author}
-      />
-      <Posts />
+      <Posts data={{}} />
     </Layout>
   )
 }

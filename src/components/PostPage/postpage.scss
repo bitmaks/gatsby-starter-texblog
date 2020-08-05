@@ -1,0 +1,49 @@
+@import "../../styles/globals.scss";
+
+.PostPage {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 5em;
+    opacity: 0;
+    animation: fadeUpSmall 500ms forwards ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__date {
+        text-align: center;
+        color: $grey-700;
+        font-size: 1.2em;
+        margin-bottom: 3em;
+    }
+
+    &__topbutton {
+        align-self: flex-end;
+        padding: 3px 9px;
+        text-decoration: none;
+
+        color: $grey-700;
+        font-family: $sans-serif-stack;
+        font-size: 110%;
+        font-weight: 500;
+        
+        border: 2px $grey-500 solid;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            background: $grey-700;
+            border-color: $grey-700;
+            color: oldlace;
+        }
+    }
+}
