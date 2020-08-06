@@ -20,7 +20,7 @@ export default function Posts({ data }) {
         <h2 className="Posts__banner">Posts</h2>
         {allMdx.edges.map((post, i )=> (
           <div className="Post" key={i}>
-            <Link to={`posts/${post.node.slug}`} className="Post__metainfo">
+            <Link to={`/posts/${post.node.slug}`} className="Post__metainfo">
               <h3 className="Post__title">{post.node.frontmatter.title}</h3>
               <h5 className="Post__date">
                 {dateInEnglish(post.node.frontmatter.date)}
@@ -31,7 +31,7 @@ export default function Posts({ data }) {
                 ? truncateText(post.node.frontmatter.description, 265)
                 : truncateText(post.node.rawBody, 265)}
             </div>
-            <Link to={`posts/${post.node.slug}`} className="Post__readmore">
+            <Link to={`/posts/${post.node.slug}`} className="Post__readmore">
               Read more
             </Link>
           </div>
