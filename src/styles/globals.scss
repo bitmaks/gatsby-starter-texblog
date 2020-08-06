@@ -84,12 +84,12 @@ span {
 button {
   border-radius: 7px;
   border-width: thin;
-  background-color: white;
-  border-style: solid;
-  border-color: $teal-med;
+  padding: 5px 10px;
+  background: none;
+  border-style: 1px $text-black solid;
   font-family: $sans-serif-stack;
-  font-size: 115%;
-  color: $teal-600;
+  font-size: 100%;
+  color: $text-black;
 
   &:hover {
     cursor: pointer;
@@ -119,10 +119,15 @@ textarea {
   padding: 12px 11px;
 }
 
-code, .token {
+code,
+.token {
   font-family: $monospace-stack;
-  font-size: 100%;
+  font-size: 90%;
   margin: 0;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .prism-code {

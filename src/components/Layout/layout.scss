@@ -1,16 +1,22 @@
 .Layout {
-    margin: 0;
-    height: 100vh;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__children {
+    flex: 1;
+    padding: 1vh 0vw;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    &__children {
-        flex: 1;
-        padding: 1vh 0vw;
-    }
-    &__footer {
-        flex-shrink: 0;
-        bottom: 0;
-    }
+  }
+  &__footer {
+    flex-shrink: 0;
+    bottom: 0;
+  }
 }
