@@ -13,6 +13,14 @@
     margin-bottom: 16px;
     line-height: 1em;
     font-size: 2em;
+    text-decoration: none;
+    color: $text-black;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+    &:hover {
+      opacity: 0.45;
+    }
   }
 
   &__legal {
