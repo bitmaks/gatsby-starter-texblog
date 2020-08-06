@@ -27,17 +27,32 @@
     width: 100%;
 
     &__item {
+      width: 100%;
+      background: gray;
+      border-radius: 5px;
+      border: 1px rgba(black,0) solid;
+      padding: 5px;
+      padding-left: 10px;
       text-decoration: none;
       font-family: $sans-serif-stack;
-      font-weight: 450;
+      font-weight: 600;
+      font-size: 95%;
       color: gainsboro;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      opacity: 1;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        opacity: 0.7;
+        background: rgba(gainsboro,0.2);
+      }
     }
 
     & .menuTitle {
       color: white;
       font-weight: 800;
       font-size: 150%;
+      background: none;
+      padding: 0;
     }
   }
 }
