@@ -34,35 +34,52 @@ body {
 }
 
 h1 {
+  margin: 5px 0;
   font-family: $serif-stack;
-  font-weight: 800;
-  font-size: 3em;
+  font-weight: 900;
+  font-size: 2.3em;
   letter-spacing: -0.005em;
   color: $text-black;
 }
 
 h2 {
+  margin: 5px 0;
   font-family: $serif-stack;
-  margin: 0;
   font-size: 1.75em;
   font-weight: 900;
   color: $text-black;
 }
 
 h3 {
-  margin: 0;
+  margin: 5px 0;
   font-family: $serif-stack;
-  font-size: 1.5em;
-  font-weight: normal;
+  font-size: 1.45em;
+  font-weight: 900;
   color: $text-black;
 }
 
 h4 {
-  margin: 0;
+  margin: 5px 0;
   font-family: $serif-stack;
-  font-size: 100%;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 400;
   color: $text-black;
+}
+
+h5 {
+  margin: 5px 0;
+  font-family: $serif-stack;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: $text-black;
+}
+
+h6 {
+  margin: 5px 0;
+  font-family: $serif-stack;
+  font-size: 1.05em;
+  font-weight: 400;
+  color: $grey-700;
 }
 
 body {
@@ -71,6 +88,21 @@ body {
   font-size: 105%;
   font-weight: 500;
   color: $text-black;
+}
+
+a {
+  color: $teal-600;
+  transition: opacity 200ms ease-in-out;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+blockquote {
+  margin: 10px 0;
+  border-left: 3px $grey-400 solid;
+  padding-left: 20px;
+  color: $grey-800;
 }
 
 span {
@@ -119,6 +151,26 @@ textarea {
   padding: 12px 11px;
 }
 
+hr {
+  border: 1px solid $grey-400;
+  width: 100%;
+  background: none;
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px $grey-400 solid;
+  background: rgba($grey-200,0.6);
+}
+
+td {
+  border: 1px $grey-400 solid;
+}
+
 code,
 .token {
   font-family: $monospace-stack;
@@ -133,6 +185,6 @@ code,
 .prism-code {
   font-family: $monospace-stack;
   border-radius: 6px;
-  padding: 10px;
+  padding: 10px 15px;
   background-color: rgba(white, 0.9) !important;
 }

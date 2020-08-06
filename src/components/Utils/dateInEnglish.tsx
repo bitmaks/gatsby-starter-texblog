@@ -16,7 +16,7 @@ const months = [
 export default function dateInEnglish(date) {
   var dateArr = []
   dateArr = date.split("-")
-  var dateInEnglish = `${dateArr[2]} ${months[parseInt(dateArr[1])-1]}, ${
+  var dateInEnglish = `${parseInt(dateArr[2])} ${months[parseInt(dateArr[1])-1]}, ${
     dateArr[0]
   }`
   return dateInEnglish

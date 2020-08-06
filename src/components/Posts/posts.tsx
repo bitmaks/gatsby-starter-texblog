@@ -42,16 +42,20 @@ export default function Posts({ data }) {
 }
 
 export const usePostQuery = () => {
+  // Fetch latest posts
   const { allMdx } = useStaticQuery(
     graphql`
-      query PostQuery {
-        allMdx(filter: { fileAbsolutePath: { regex: "/content/posts/" } }) {
+      query FetchRecentPosts {
+        allMdx(
+          sort: { order: DESC, fields: frontmatter___date }
+          filter: { fileAbsolutePath: { regex: "/content/posts/" } }
+        ) {
           edges {
             node {
               frontmatter {
-                title
-                description
                 date
+                description
+                title
               }
               slug
               rawBody
