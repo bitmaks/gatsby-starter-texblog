@@ -24,11 +24,11 @@ const Header = props => (
 			<Link to="/about" className="Header__menu__item">
 				About
 			</Link>
-			<Link to="/posts" className="Header__menu__item">
+			<Link to="/all-posts" className="Header__menu__item">
 				Posts
 			</Link>
-			<Link to="/page-2" className="Header__menu__item">
-				Page 2
+			<Link to="/example-page" className="Header__menu__item">
+				Example Page
 			</Link>
 		</Menu>
 	</header>
