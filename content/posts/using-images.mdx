@@ -1,0 +1,45 @@
+---
+title: Using Images
+date: "2020-08-4"
+description: "View examples on how to use embed images within your mdx files as well as using the markdown syntax and the standard html syntax."
+---
+import Image from "../../src/components/Utils/image"
+
+Images can be implemented in your posts using one of the following three ways:
+
+## 1. Using default Markdown syntax
+As mdx is a superset of markdown, the default markdown syntax for adding images works well for externals urls.
+
+### Code
+```markdown
+![Swallow Flying](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Swallow_flying_drinking.jpg/256px-Swallow_flying_drinking.jpg)
+```
+
+### Result
+![Swallow Flying](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Swallow_flying_drinking.jpg/256px-Swallow_flying_drinking.jpg)
+
+## 2. Using default HTML syntax
+The HTML `<img>` tag is also a valid way to add photos to your articles.
+
+### Code
+```html
+<img src="https://images.unsplash.com/photo-1559422721-1ed9b8d28236?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="350" className="small-image" alt="Playful Dog" />
+```
+
+### Result
+<img src="https://images.unsplash.com/photo-1559422721-1ed9b8d28236?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="350" alt="Playful Dog" />
+
+## 3. Using Gatsby Image
+Lastly, you may also use the custom Gastby Image component which I have modified to make it easier to directly insert images. You simply need to add the image to the `/src/images` folder and you can reference it using the `Image` component with the `fileName` prop.
+
+### Code
+```javascript
+// This must go at the top of the mdx file after the metadata
+import Image from "../components/image"
+
+// Image is in /src/images/gatsby-astronaut.png
+<Image fileName="gatsby-astronaut.png" className="small-image" alt="Gatsby Astronaut" />
+```
+
+### Result
+<Image fileName="gatsby-astronaut.png" className="small-image" alt="Gatsby Astronaut" />

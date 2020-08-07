@@ -4,9 +4,11 @@ date: "2020-08-5"
 description: "View examples on how to use LaTeX code with mdx as well as how to format code blocks to work with syntax highlighting."
 ---
 
-This blog supports some simple code syntax highlighting and the usage of $ \LaTeX $.
+This blog supports code syntax highlighting through `prism-react-renderer` and the usage of $\LaTeX$ via `gatsby-remark-katex`
 
-Be weary, Katex, the library used to display Latex, will crash your development environment if it encounters a symbol it is unfamiliar with. Be sure to test your posts on the development environment before publishing the site to a production server.
+However $\KaTeX$ (the library used to render) $\LaTeX$ will crash your development environment if it encounters a symbol it is unfamiliar with. Make sure you test your posts locally before publishing the site to a production server.
+
+To learn more about implementing $\LaTeX$ in markdown, check out the [documentation here](https://using-remark.gatsbyjs.org/katex/)
 
 # $\LaTeX$ Examples
 
@@ -39,8 +41,7 @@ $$
 
 # Code Examples
 
-### Program in c++ to get the quotient and remainder of a pair of numbers.
-
+### Quotient and remainder of a pair of numbers in c++
 ```cpp
 #include <iostream>
 using namespace std;
@@ -65,10 +66,7 @@ int main()
 }
 ```
 
-<div className="mt4" />
-
-### Program in python using the Sieve of Eratosthenes to count primes
-
+### Sieve of Eratosthenes implemented in Python
 ```python
 def countPrimes_sieve_of_eratosthenes(self, n: int) -> int:
   if n < 2:
@@ -84,3 +82,5 @@ def countPrimes_sieve_of_eratosthenes(self, n: int) -> int:
 
   return len(seive) - len(marked) - 1
 ```
+
+_Thanks to [kunalJa](https://github.com/kunalJa/gatsby-starter-math-blog) for the examples on this page_
