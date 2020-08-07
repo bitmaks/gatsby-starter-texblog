@@ -158,6 +158,12 @@ hr {
 	margin: 20px 0;
 }
 
+section {
+	max-width: 800px;
+	width: 100%;
+	padding: 10px 20px;
+}
+
 table {
 	border-collapse: collapse;
 }
@@ -206,7 +212,4 @@ code {
 	h2 {
 		font-size: 1.7em;
 	}
-}
-
-@media (min-width: 768px) and (max-width: 1440px) {
 }
