@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import { slide as Menu } from "react-burger-menu"
+import SocialLinks from "../SocialLinks/sociallinks"
 
 import "./header.scss"
 
@@ -19,6 +20,7 @@ const Header = props => (
           ? `Undefined`
           : props.siteTitle}
       </Link>
+      <SocialLinks className="Header__SocialLinks" />
       <Link to="/about" className="Header__menu__item">
         About
       </Link>

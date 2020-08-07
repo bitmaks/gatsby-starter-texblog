@@ -53,6 +53,22 @@
       font-size: 150%;
       background: none;
       padding: 0;
+      text-align: center;
+      margin-bottom: 0;
     }
   }
+
+  &__SocialLinks {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    &__container {
+        background: none;
+    }
+    &__icon {
+        color: white;
+    }
+}
 }
