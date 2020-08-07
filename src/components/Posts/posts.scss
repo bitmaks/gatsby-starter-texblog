@@ -1,102 +1,102 @@
 @import "../../styles/colors.scss";
 
 .Posts {
-  width: 100%;
-  max-width: 800px;
-  padding: 30px;
+	width: 100%;
+	max-width: 800px;
+	padding: 30px;
 
-  &__banner {
-    margin-bottom: 25px;
-  }
+	&__banner {
+		margin-bottom: 25px;
+	}
 }
 
 .Post {
-  margin-bottom: 3em;
-  width: 100%;
+	margin-bottom: 3em;
+	width: 100%;
 
-  opacity: 0;
-  animation: fadeUpSmall 600ms forwards ease;
-  padding-bottom: 20px;
-  border-bottom: 1px $grey-400 solid;
+	opacity: 0;
+	animation: fadeUpSmall 600ms forwards ease;
+	padding-bottom: 20px;
+	border-bottom: 1px $grey-400 solid;
 
-  &__title {
-    margin: 0;
-    font-weight: 900;
-    font-size: 1.35em;
-  }
+	&__title {
+		margin: 0;
+		font-weight: 900;
+		font-size: 1.35em;
+	}
 
-  &__date {
-    margin: 0;
-    font-size: 1em;
-    font-weight: normal;
-    color: $grey-700;
-  }
+	&__date {
+		margin: 0;
+		font-size: 1em;
+		font-weight: normal;
+		color: $grey-700;
+	}
 
-  &__description {
-    font-size: 105%;
-    letter-spacing: 0.02rem;
-    line-height: 1.8em;
-    margin-bottom: 5px;
-  }
+	&__description {
+		font-size: 105%;
+		letter-spacing: 0.02rem;
+		line-height: 1.8em;
+		margin-bottom: 5px;
+	}
 
-  &__readmore {
-    color: $grey-700;
-    opacity: 1;
-    will-change: opacity;
-    transition: opacity 200ms ease-in-out;
-    text-decoration: none;
-    &::after {
-      content: "→";
-      font-size: 90%;
-      color: $grey-600;
-      margin-left: 3px;
-      margin-top: 1px;
-      display: inline-block;
-      vertical-align: middle;
-      line-height: normal;
+	&__readmore {
+		color: $grey-700;
+		opacity: 1;
+		will-change: opacity;
+		transition: opacity 200ms ease-in-out;
+		text-decoration: none;
+		&::after {
+			content: "→";
+			font-size: 90%;
+			color: $grey-600;
+			margin-left: 3px;
+			margin-top: 1px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
 
-      transition: margin-left 200ms ease-in-out;
-    }
-    &:hover {
-      opacity: 0.4;
-      text-decoration: underline;
-      &.Post__readmore:after {
-        margin-left: 5px;
-      }
-    }
-  }
+			transition: margin-left 200ms ease-in-out;
+		}
+		&:hover {
+			opacity: 0.4;
+			text-decoration: underline;
+			&.Post__readmore:after {
+				margin-left: 5px;
+			}
+		}
+	}
 
-  &__metainfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
+	&__metainfo {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 10px;
 
-    opacity: 1;
-    will-change: opacity;
-    transition: opacity 200ms ease-in-out;
-    text-decoration: none;
-    &:hover {
-      opacity: 0.4;
-      & .Post__title {
-        text-decoration: underline;
-      }
-    }
-  }
+		opacity: 1;
+		will-change: opacity;
+		transition: opacity 200ms ease-in-out;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.4;
+			& .Post__title {
+				text-decoration: underline;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .Posts {
-    &__banner {
-      margin-bottom: 20px;
-    }
-  }
-  .Post {
-    &__metainfo {
-      flex-direction: column;
-    }
-  }
+	.Posts {
+		&__banner {
+			margin-bottom: 20px;
+		}
+	}
+	.Post {
+		&__metainfo {
+			flex-direction: column;
+		}
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {

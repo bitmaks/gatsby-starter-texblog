@@ -2,73 +2,73 @@
 @import "../../styles/fonts.scss";
 
 .Header {
-  width: 100%;
-  position: relative;
-  top: 0;
-  margin-top: 3em;
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  &__logo {
-    margin-left: 10%;
-    text-decoration: none;
-    margin-top: 0;
-    &__text {
-      margin-top: 0;
-      font-size: 20px;
-    }
-  }
+	width: 100%;
+	position: relative;
+	top: 0;
+	margin-top: 3em;
+	display: flex;
+	flex-shrink: 0;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	&__logo {
+		margin-left: 10%;
+		text-decoration: none;
+		margin-top: 0;
+		&__text {
+			margin-top: 0;
+			font-size: 20px;
+		}
+	}
 
-  &__menu {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+	&__menu {
+		position: absolute;
+		height: 100%;
+		width: 100%;
 
-    &__item {
-      width: 100%;
-      background: gray;
-      border-radius: 5px;
-      border: 1px rgba(black,0) solid;
-      padding: 5px;
-      padding-left: 10px;
-      text-decoration: none;
-      font-family: $sans-serif-stack;
-      font-weight: 600;
-      font-size: 95%;
-      color: white;
-      margin-bottom: 15px;
-      opacity: 1;
-      transition: all 200ms ease-in-out;
-      &:hover {
-        opacity: 0.7;
-        background: rgba(gainsboro,0.2);
-      }
-    }
+		&__item {
+			width: 100%;
+			background: gray;
+			border-radius: 5px;
+			border: 1px rgba(black, 0) solid;
+			padding: 5px;
+			padding-left: 10px;
+			text-decoration: none;
+			font-family: $sans-serif-stack;
+			font-weight: 600;
+			font-size: 95%;
+			color: white;
+			margin-bottom: 15px;
+			opacity: 1;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				opacity: 0.7;
+				background: rgba(gainsboro, 0.2);
+			}
+		}
 
-    & .menuTitle {
-      color: white;
-      font-weight: 800;
-      font-size: 150%;
-      background: none;
-      padding: 0;
-      text-align: center;
-      margin-bottom: 0;
-    }
-  }
+		& .menuTitle {
+			color: white;
+			font-weight: 800;
+			font-size: 150%;
+			background: none;
+			padding: 0;
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
 
-  &__SocialLinks {
-    padding: 5px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    &__container {
-        background: none;
-    }
-    &__icon {
-        color: white;
-    }
-}
+	&__SocialLinks {
+		padding: 5px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		&__container {
+			background: none;
+		}
+		&__icon {
+			color: white;
+		}
+	}
 }

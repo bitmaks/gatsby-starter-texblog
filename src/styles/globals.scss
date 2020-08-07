@@ -3,188 +3,188 @@
 html,
 body,
 #root {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100%;
-  background-color: $background;
-  scroll-behavior: smooth;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100%;
+	background-color: $background;
+	scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  margin: 0 auto;
-  font-family: $serif-stack;
-  font-size: 16px;
-  line-height: 1.5;
-  color: $text-black;
-  -webkit-font-smoothing: antialiased;
+	width: 100%;
+	margin: 0 auto;
+	font-family: $serif-stack;
+	font-size: 16px;
+	line-height: 1.5;
+	color: $text-black;
+	-webkit-font-smoothing: antialiased;
 
-  * {
-    box-sizing: border-box;
-  }
+	* {
+		box-sizing: border-box;
+	}
 
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
 
-  @media (min-width: 768px) and (max-width: 1400px) {
-    font-size: 14px;
-  }
+	@media (min-width: 768px) and (max-width: 1400px) {
+		font-size: 14px;
+	}
 }
 
 h1 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-weight: 900;
-  font-size: 2.3em;
-  letter-spacing: -0.005em;
-  color: $text-black;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-weight: 900;
+	font-size: 2.3em;
+	letter-spacing: -0.005em;
+	color: $text-black;
 }
 
 h2 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-size: 1.75em;
-  font-weight: 900;
-  color: $text-black;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-size: 1.75em;
+	font-weight: 900;
+	color: $text-black;
 }
 
 h3 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-size: 1.45em;
-  font-weight: 900;
-  color: $text-black;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-size: 1.45em;
+	font-weight: 900;
+	color: $text-black;
 }
 
 h4 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-size: 1.3em;
-  font-weight: 400;
-  color: $text-black;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-size: 1.3em;
+	font-weight: 400;
+	color: $text-black;
 }
 
 h5 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-size: 1.1em;
-  font-weight: 400;
-  color: $text-black;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-size: 1.1em;
+	font-weight: 400;
+	color: $text-black;
 }
 
 h6 {
-  margin: 5px 0;
-  font-family: $serif-stack;
-  font-size: 1.05em;
-  font-weight: 400;
-  color: $grey-700;
+	margin: 5px 0;
+	font-family: $serif-stack;
+	font-size: 1.05em;
+	font-weight: 400;
+	color: $grey-700;
 }
 
 body {
-  margin: 0;
-  font-family: $serif-stack;
-  font-size: 105%;
-  font-weight: 500;
-  color: $text-black;
+	margin: 0;
+	font-family: $serif-stack;
+	font-size: 105%;
+	font-weight: 500;
+	color: $text-black;
 }
 
 a {
-  color: $teal-600;
-  transition: opacity 200ms ease-in-out;
-  &:hover {
-    opacity: 0.5;
-  }
+	color: $teal-600;
+	transition: opacity 200ms ease-in-out;
+	&:hover {
+		opacity: 0.5;
+	}
 }
 
 blockquote {
-  margin: 10px 0;
-  border-left: 3px $grey-400 solid;
-  padding-left: 20px;
-  color: $grey-800;
+	margin: 10px 0;
+	border-left: 3px $grey-400 solid;
+	padding-left: 20px;
+	color: $grey-800;
 }
 
 span {
-  margin: 0;
-  font-family: $serif-stack;
-  font-size: 100%;
-  font-weight: normal;
-  color: $text-black;
+	margin: 0;
+	font-family: $serif-stack;
+	font-size: 100%;
+	font-weight: normal;
+	color: $text-black;
 }
 
 button {
-  border-radius: 7px;
-  border-width: thin;
-  padding: 5px 10px;
-  background: none;
-  border-style: 1px $text-black solid;
-  font-family: $sans-serif-stack;
-  font-size: 100%;
-  color: $text-black;
+	border-radius: 7px;
+	border-width: thin;
+	padding: 5px 10px;
+	background: none;
+	border-style: 1px $text-black solid;
+	font-family: $sans-serif-stack;
+	font-size: 100%;
+	color: $text-black;
 
-  &:hover {
-    cursor: pointer;
-  }
+	&:hover {
+		cursor: pointer;
+	}
 
-  &:active {
-    border-style: solid;
-  }
+	&:active {
+		border-style: solid;
+	}
 }
 
 input {
-  font-family: $sans-serif-stack;
-  -webkit-appearance: none;
-  font-size: 0.9em;
-  font-weight: normal;
-  outline: none;
+	font-family: $sans-serif-stack;
+	-webkit-appearance: none;
+	font-size: 0.9em;
+	font-weight: normal;
+	outline: none;
 }
 
 textarea {
-  outline: none;
-  -webkit-appearance: none;
-  min-height: 50px;
-  font-family: $sans-serif-stack;
-  resize: none;
-  font-size: 0.9rem;
-  font-weight: normal;
-  padding: 12px 11px;
+	outline: none;
+	-webkit-appearance: none;
+	min-height: 50px;
+	font-family: $sans-serif-stack;
+	resize: none;
+	font-size: 0.9rem;
+	font-weight: normal;
+	padding: 12px 11px;
 }
 
 hr {
-  border: 1px solid $grey-400;
-  width: 100%;
-  background: none;
-  margin: 20px 0;
+	border: 1px solid $grey-400;
+	width: 100%;
+	background: none;
+	margin: 20px 0;
 }
 
 table {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 th {
-  border: 1px $grey-400 solid;
-  background: rgba($grey-200,0.6);
+	border: 1px $grey-400 solid;
+	background: rgba($grey-200, 0.6);
 }
 
 td {
-  border: 1px $grey-400 solid;
+	border: 1px $grey-400 solid;
 }
 
 code,
 .token {
-  font-family: $monospace-stack;
-  font-size: 90%;
-  margin: 0;
+	font-family: $monospace-stack;
+	font-size: 90%;
+	margin: 0;
 }
 
 .overflow-auto {
-  overflow: auto;
+	overflow: auto;
 }
 
 .prism-code {
-  font-family: $monospace-stack;
-  border-radius: 6px;
-  padding: 10px 15px;
-  background-color: rgba(white, 0.9) !important;
+	font-family: $monospace-stack;
+	border-radius: 6px;
+	padding: 10px 15px;
+	background-color: rgba(white, 0.9) !important;
 }

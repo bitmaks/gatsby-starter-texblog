@@ -1,41 +1,41 @@
 @import "../../styles/colors.scss";
 
 .Intro {
-  width: 100%;
-  max-width: 800px;
+	width: 100%;
+	max-width: 800px;
 
-  padding: 10px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__header {
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 2.6em;
-  }
-  &__subheader {
-    font-size: 1em;
-    text-align: center;
-    line-height: 2em;
-    letter-spacing: 0.04rem;
-    padding: 0 25% 10% 25%;
-    border-bottom: 1px $grey-400 solid;
-  }
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__header {
+		font-weight: bold;
+		margin-bottom: 20px;
+		font-size: 2.6em;
+	}
+	&__subheader {
+		font-size: 1em;
+		text-align: center;
+		line-height: 2em;
+		letter-spacing: 0.04rem;
+		padding: 0 25% 10% 25%;
+		border-bottom: 1px $grey-400 solid;
+	}
 }
 
 @media (max-width: 768px) {
-  .Intro {
-    &__header {
-      font-size: 2.5em;
-    }
-    &__subheader {
-      padding: 0 10px 10% 10px;
-    }
-  }
+	.Intro {
+		&__header {
+			font-size: 2.5em;
+		}
+		&__subheader {
+			padding: 0 10px 10% 10px;
+		}
+	}
 }
 
 @media (min-width: 768px) and (max-width: 1440px) {
-  .Intro {
-  }
+	.Intro {
+	}
 }
