@@ -21,7 +21,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				// * need to update before public release
+				// If using Google Analytics, add your own tracking ID here
 				trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
 				head: true,
 			},
