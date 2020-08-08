@@ -55,7 +55,63 @@ TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to show
 
     Edit the `gatsby-config.js` file and edit the `siteMetada` variables. Save your changes and the browser will update in real time! _(Note: If the browser doesn't update, restart your development environment to view the changes)_
 
+## ✏️ Content Creation
+I wanted to have a balance of statically typed code which would be heavily customisable as well as templated code for easy setting up. I ended up making the blog posts or "articles" dynamically generated using mdx and I made the site pages fully customisable to add an extra layer of flexibility.
+### Articles (Posts)
+Articles are written using mdx ([tutorial here](https://www.gatsbyjs.org/docs/mdx/writing-pages)) and are located in the `/content/posts/` directory. They are automatically sourced by the `Posts` component and to add them you simply create a new mdx file in the folder.
+
+### Pages
+Pages are simply site pages which can be fully customised. They are located in `/src/pages/` and accept jsx, tsx or js files. _(Note that pages are not sourced dynamically and must be added to the `/src/comonents/Header/header.tsx` component individually_
+
+
 ## 🛠 Configuration
+### Site Metadata
+The site title, author and description are all dynamically sourced from `gatsby-config.js` to make it easier to update through one file. Modifying these will update banners and site details all in real time via the Gatsby development environment.
+
+```javascript
+siteMetadata: {
+  title: `TeXBlog`,
+  description: `A simple, LaTeX enabled starter to properly showcase your beautifully typeset articles. Perfectly complements STEM blogs.`,
+  author: `Akshat Bisht`,
+},
+```
+
+### Social Media
+TeXBlog comes with a custom SocialLinks component which is used to dynamically generate a list of social media icons. The SocialLinks component is located in `/src/components/SocialLinks/` and is heavily customisable. The icons are fetched using `react-icons` and so any icon in their [icon library](https://react-icons.github.io/react-icons/) can be imported and used.
+
+In order to change the social media accounts open `/src/components/SocialLinks/` and edit the `socialMediaAccounts` const.
+```javascript
+const socialMediaAccounts = [
+  {
+    id: 1,
+    icon: FaGithub,
+    url: "http://github.com/aaaakshat/gatsby-starter-texblog"
+  },
+  {
+    id: 2,
+    icon: GrGatsbyjs,
+    url: "https://www.gatsbyjs.org/starters/aaaakshat/gatsby-starter-texblog/",
+  },
+  // add more here...
+]
+```
+There are 3 values you must change for every account added:
+1. `id`: Required as part of react's mapping function and should simply indicate the numerical id of each component _(i.e. first component = id: 1)_
+1. `icon`: Indicates the icon the component will use from `react-icons` select one from [their library](https://react-icons.github.io/react-icons/)
+1. `url`: Represents your url for the social media account
+
+
+### Google Analytics
+For sites using Google Analytics, the plugin comes pre-installed and you can add your analytics tracking id (UA-12345...) in the `gatsby-config.js` file. If you are using a cloud deployment model, add GOOGLE_ANALYTICS_TRACKING_ID to your environment variables and assign the values through there.
+```javascript
+{
+  resolve: `gatsby-plugin-google-analytics`,
+  options: {
+    trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+    head: true,
+  },
+},
+```
 
 ### Directory Overview
     .
@@ -100,7 +156,7 @@ TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to show
 
 
 ## 🎓 Learning Gatsby
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
+This starter uses Gatsby which is a fast site generator for React. Full documentation for Gatsby is available [on their website](https://www.gatsbyjs.org/).
 
 ## 🙌 Contributing
 Contributions are appreciated and accepted [via Github](https://github.com/aaaakshat/gatsby-starter-texblog), from improvements on the source code to making this readme better.
