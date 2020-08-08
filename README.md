@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  TeXBlog: A Gatsby Starter
+  TeXBlog Gatsby Starter
 </h1>
 
 TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to showcase your beautifully typeset articles. The perfect complement to maths and science blogs.
