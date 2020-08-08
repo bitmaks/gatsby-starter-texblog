@@ -21,7 +21,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-analytics`,
 			options: {
-				// If using Google Analytics, add your own tracking ID here
+				// If using cloud deployment services, add GOOGLE_ANALYTICS_TRACKING_ID to your environment variables.
 				trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
 				head: true,
 			},
