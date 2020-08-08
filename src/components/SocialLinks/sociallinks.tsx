@@ -11,7 +11,7 @@ const socialMediaAccounts = [
 	{
 		id: 2,
 		icon: GrGatsbyjs,
-		url: "http://github.com/aaaakshat/gatsby-starter-texblog",
+		url: "https://www.gatsbyjs.org/starters/aaaakshat/gatsby-starter-texblog/",
 	},
 	{
 		id: 3,
