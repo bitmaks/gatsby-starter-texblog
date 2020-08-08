@@ -8,7 +8,7 @@
   TeXBlog: A Gatsby Starter
 </h1>
 
-TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to showcase your beautifully typeset articles. A great complement for maths and science blogs.
+TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to showcase your beautifully typeset articles. The perfect complement to maths and science blogs.
 
 <p align="center">
   <a href="http://akshatbisht.com/texblog">
@@ -100,7 +100,7 @@ TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to show
 
 
 ## 🎓 Learning Gatsby
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/).
 
 ## 🙌 Contributing
 Contributions are appreciated and accepted [via Github](https://github.com/aaaakshat/gatsby-starter-texblog), from improvements on the source code to making this readme better.
