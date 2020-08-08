@@ -61,7 +61,7 @@ I wanted to have a balance of statically typed code which would be heavily custo
 Articles are written using mdx ([tutorial here](https://www.gatsbyjs.org/docs/mdx/writing-pages)) and are located in the `/content/posts/` directory. They are automatically sourced by the `Posts` component and to add them you simply create a new mdx file in the folder.
 
 ### Pages
-Pages are simply site pages which can be fully customised. They are located in `/src/pages/` and accept jsx, tsx or js files. _(Note that pages are not sourced dynamically and must be added to the `/src/comonents/Header/header.tsx` component individually_
+Pages are simply site pages which can be fully customised. They are located in `/src/pages/` and accept jsx, tsx or js files. _(Note that pages are not sourced dynamically and must be added to the `/src/comonents/Header/header.tsx` component individually)_
 
 
 ## 🛠 Configuration
