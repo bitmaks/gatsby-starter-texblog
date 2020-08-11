@@ -22,9 +22,10 @@ TeXBlog is a lightweight Gatsby starter, enabled with LaTeX to allow you to show
 
 ## 🚀 Quick Start
 ### Automated Deployments
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aaaakshat/gatsby-starter-texblog)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Faaaakshat%2Fgatsby-starter-texblog&project-name=gatsby-starter-texblog&repo-name=gatsby-starter-texblog)
+Deploy with just one click to Vercel or Netlify
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Faaaakshat%2Fgatsby-starter-texblog&project-name=gatsby-starter-texblog&repo-name=gatsby-starter-texblog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/aaaakshat/gatsby-starter-texblog)
 
 ### Manual Setup
 
