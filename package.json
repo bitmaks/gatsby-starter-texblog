@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-texblog",
-  "private": true,
+  "private": false,
   "description": "A simple, LaTeX enabled starter to properly showcase your beautifully typeset articles. Perfectly complements STEM blogs.",
   "version": "0.1.0",
   "author": "Akshat Bisht <hello@akshatbisht.com>",
@@ -53,7 +53,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
