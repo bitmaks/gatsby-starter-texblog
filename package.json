@@ -21,7 +21,7 @@
     "gatsby-remark-katex": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.14",
     "gatsby-source-thirdparty": "^1.0.6",
-    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.7",
     "katex": "^0.12.0",
     "node-sass": "^4.14.1",
